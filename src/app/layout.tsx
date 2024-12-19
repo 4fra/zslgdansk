@@ -9,9 +9,7 @@ export const metadata: Metadata = {
     description: 'Zachowaj Spokój i Logikę Gdańsk',
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+export default function RootLayout({children}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
