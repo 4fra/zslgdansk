@@ -1,9 +1,11 @@
 "use client"
-import {useState} from 'react';
+import Link from 'next/link';
+import {useEffect, useState} from 'react';
 import {Burger, Container, Flex, Group, Text} from '@mantine/core';
 import {useDisclosure} from '@mantine/hooks';
 import classes from './Header.module.css';
 import PlutaLogo from "@/components/PlutaLogo/PlutaLogo";
+import {usePathname} from 'next/navigation';
 
 const links = [
     {link: '/', label: 'Strona główna'},
@@ -11,22 +13,24 @@ const links = [
 ];
 
 export default function Header() {
+    const pathname = usePathname();
     const [opened, {toggle}] = useDisclosure(false);
-    const [active, setActive] = useState(links[0].link);
+    const [active, setActive] = useState('');
+
+    useEffect(() => {
+        setActive(pathname);
+    }, [pathname]);
 
     const items = links.map((link) => (
-        <a
+        <Link
+            className={classes.link}
             key={link.label}
             href={link.link}
-            className={classes.link}
             data-active={active === link.link || undefined}
-            onClick={(event) => {
-                event.preventDefault();
-                setActive(link.link);
-            }}
-        >
+            onClick={() => setActive(link.link)}
+            passHref>
             {link.label}
-        </a>
+        </Link>
     ));
 
     return (
