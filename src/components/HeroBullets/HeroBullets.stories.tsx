@@ -7,7 +7,7 @@ export default {
     component: HeroBullets,
 } as Meta;
 
-const Template: StoryFn = (args: Record<string, unknown>) => <HeroBullets {...args} />;
+const Template: StoryFn = (args: Record<string, unknown>) => <HeroBullets {...args} targetId={"features"}/>;
 
 export const Default = Template.bind({});
 Default.args = {};
