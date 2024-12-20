@@ -33,7 +33,7 @@ export default function Header() {
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
                 <Flex className={classes.logoTextContainer} direction={"row"} align={"center"} gap={"md"}>
-                    <PlutaLogo/>
+                    <PlutaLogo h={48}/>
                     <Text size={"md"}>Zachowajmy Spokój i Logikę</Text>
                 </Flex>
                 <Group gap={5} visibleFrom="xs">
