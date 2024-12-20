@@ -41,7 +41,7 @@ const FeaturesData = [
     },
     {
         icon: IconMessage2,
-        title: 'Lepsza komunikacja',
+        title: 'Lepsza komunikacja między uczniami',
         description:
             'Stworzenie szkolnej społeczności na platformie Discord.',
     },
