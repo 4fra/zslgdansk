@@ -1,10 +1,15 @@
 import {IconCheck} from '@tabler/icons-react';
-import {Button, Container, Group, Image, List, ListItem, Text, ThemeIcon} from '@mantine/core';
+import {Container, Image, List, ListItem, Text, ThemeIcon} from '@mantine/core';
 import styles from './HeroBullets.module.css';
 import texts from './data/texts';
 import AnimatedTitle from '../AnimatedTitle/AnimatedTitle';
+import ScrollButton from "@/components/ScrollButton/ScrollButton";
 
-export default function HeroBullets() {
+interface HeroBulletsProps {
+    targetId: string;
+}
+
+export default function HeroBullets({targetId}: HeroBulletsProps) {
     return (
         <Container size="md">
             <div className={styles.inner}>
@@ -31,11 +36,7 @@ export default function HeroBullets() {
                         <ListItem>Lepsza komunikacja</ListItem>
                     </List>
 
-                    <Group mt={30}>
-                        <Button radius="xl" size="md" className={styles.control}>
-                            Dowiedz się więcej
-                        </Button>
-                    </Group>
+                    <ScrollButton styles={styles} targetId={targetId}/>
                 </div>
                 <Image src={"/pdwface.png"} alt={"Robert Kibica"} className={styles.image}/>
             </div>
