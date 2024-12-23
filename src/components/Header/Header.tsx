@@ -1,11 +1,12 @@
 "use client"
-import Link from 'next/link';
 import {useEffect, useState} from 'react';
+import Link from 'next/link';
 import {Burger, Container, Flex, Group, Text} from '@mantine/core';
 import {useDisclosure} from '@mantine/hooks';
 import classes from './Header.module.css';
-import PlutaLogo from "@/components/PlutaLogo/PlutaLogo";
+import PlutaLogo from '@/components/PlutaLogo/PlutaLogo';
 import {usePathname} from 'next/navigation';
+
 
 const links = [
     {link: '/', label: 'Strona główna'},
@@ -28,7 +29,8 @@ export default function Header() {
             href={link.link}
             data-active={active === link.link || undefined}
             onClick={() => setActive(link.link)}
-            passHref>
+            passHref
+        >
             {link.label}
         </Link>
     ));
@@ -36,15 +38,21 @@ export default function Header() {
     return (
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
-                <Flex className={classes.logoTextContainer} direction={"row"} align={"center"} gap={"md"}>
-                    <PlutaLogo h={48}/>
-                    <Text size={"md"}>Zachowajmy Spokój i Logikę</Text>
-                </Flex>
+                {opened ? (
+                        <Group gap={5} hiddenFrom="xs">
+                            {items}
+                        </Group>
+                    )
+                    : (
+                        <Flex className={classes.logoTextContainer} direction={'row'} align={'center'} gap={'md'}>
+                            <PlutaLogo h={48}/>
+                            <Text size={'md'}>Zachowajmy Spokój i Logikę</Text>
+                        </Flex>
+                    )}
                 <Group gap={5} visibleFrom="xs">
                     {items}
                 </Group>
-
-                <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm"/>
+                <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" aria-label={'toggle-navigation'}/>
             </Container>
         </header>
     );
