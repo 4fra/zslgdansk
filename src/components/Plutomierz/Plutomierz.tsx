@@ -24,7 +24,7 @@ const Plutomierz: React.FC = () => {
     }, []);
 
     return (
-        <Container size="xs" style={{textAlign: 'center', marginTop: '20px'}}>
+        <Container size="xs" style={{textAlign: 'center', marginTop: '20px', minHeight: '50vh'}}>
             {plutaValue !== null && plutaValue !== undefined ? (
                 <GradientCircularProgressbar
                     value={plutaValue * 2}

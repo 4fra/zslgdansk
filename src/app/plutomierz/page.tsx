@@ -1,9 +1,5 @@
-import Plutomierz from "@/components/Plutomierz/Plutomierz";
+import PlutomierzContainer from "@/components/PlutomierzContainer/PlutomierzContainer";
 
 export default function Secrets() {
-    return (
-        <>
-            <Plutomierz/>
-        </>
-    );
+    return <PlutomierzContainer/>;
 }
