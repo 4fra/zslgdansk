@@ -10,7 +10,7 @@ import {usePathname} from 'next/navigation';
 
 const links = [
     {link: '/', label: 'Strona główna'},
-    {link: '/secrets', label: 'Tajemnice Pluty'},
+    {link: '/plutomierz', label: 'Darmowy Plutomierz'},
 ];
 
 export default function Header() {
