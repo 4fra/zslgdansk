@@ -3,5 +3,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: calc(var(--mantine-spacing-xl) * 4);
+    padding-bottom: calc(var(--mantine-spacing-xl) * 2);
 }
