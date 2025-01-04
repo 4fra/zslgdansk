@@ -31,7 +31,7 @@ const FeaturesData = [
         icon: IconLock,
         title: 'Wsparcie dla wydarzeń uczniowskich',
         description:
-            'Rozwój i promocja szkolnych eventów takich jak ZSŁ LOL CUP.',
+            'Rozwój i promocja szkolnych eventów.',
     },
     {
         icon: IconCalendarEvent,
