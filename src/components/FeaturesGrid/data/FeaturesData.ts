@@ -31,7 +31,7 @@ const FeaturesData = [
         icon: IconLock,
         title: 'Wsparcie dla wydarzeń uczniowskich',
         description:
-            'Rozwój i promocja szkolnych eventów.',
+            'Rozwój i promocja wydarzeń organizowanych przez uczniów.',
     },
     {
         icon: IconCalendarEvent,
