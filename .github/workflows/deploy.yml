@@ -17,5 +17,5 @@ jobs:
       - name: Push to dokku
         uses: dokku/github-action@master
         with:
-          git_remote_url: 'ssh://dokku@38.242.250.43:22/pdw/zslgdansk'
+          git_remote_url: 'dokku@38.242.250.43:zslgdansk'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
