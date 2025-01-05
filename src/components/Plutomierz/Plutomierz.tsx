@@ -11,7 +11,9 @@ const Plutomierz: React.FC = () => {
 
         ws.onmessage = (event) => {
             const data = JSON.parse(event.data);
-            setPlutaValue(data.value);
+            if (data.type === "pluta") {
+                setPlutaValue(data.value);
+            }
         };
 
         ws.onerror = (error) => {
