@@ -4,7 +4,7 @@ export const postulates = [
         description: "Osoba, która zajmie drugie miejsce w wyborach, zostanie wiceprzewodniczącym SU, ponieważ chcę, żeby jej pomysły miały realną szansę na realizację. Będę blisko współpracować z tą osobą i wspierać ją w ich wdrażaniu. Postępy będą na bieżąco ogłaszane, żeby każdy widział, jak idzie realizacja. Jeśli jednak obietnice nie zostaną spełnione, będzie to widoczne dla wszystkich. 👍=help"
     },
     {
-        title: "Discord Informacyjny",
+        title: "Discord informacyjny",
         description: "Powstanie discorda szkolnego na którym będą najnowsze informacje od samorządu uczniowskiego (np. nadchodzące wydarzenia, obecne działania samorządu oraz ważne informacje do uczniów) oraz gdzie będzie można zaproponować swoje pomysły na ulepszenie szkoły. Obecnie jedyną platformą do informowania o działaniach samorządu jest messenger, który jest słabo zorganizowany i dostępny tylko dla trójek klasowych, a trzeba umożliwić dostęp do najnowszych informacji dla każdego."
     },
     {
