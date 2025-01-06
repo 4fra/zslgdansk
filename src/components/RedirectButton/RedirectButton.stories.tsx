@@ -10,9 +10,14 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Story: Story = {
+export const Default: Story = {
     name: "Default",
     args: {
         to: "/"
-    }
+    },
+    parameters: {
+        nextjs: {
+            appDirectory: true,
+        },
+    },
 };

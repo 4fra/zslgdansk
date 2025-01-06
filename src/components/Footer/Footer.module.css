@@ -23,3 +23,10 @@
 .linksContainer a {
     margin-right: 10px;
 }
+
+.highlight {
+    position: relative;
+    background-color: var(--mantine-primary-color-light);
+    border-radius: var(--mantine-radius-sm);
+    padding: 4px 4px;
+}

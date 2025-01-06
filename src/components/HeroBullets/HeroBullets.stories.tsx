@@ -1,13 +1,21 @@
-import React from 'react';
-import {Meta, StoryFn} from '@storybook/react';
-import HeroBullets from './HeroBullets';
+import HeroBullets from "@/components/HeroBullets/HeroBullets";
+import {Meta, StoryObj} from "@storybook/react";
 
-export default {
-    title: 'Components/HeroBullets',
-    component: HeroBullets,
-} as Meta;
+const meta = {
+    title: "Components/HeroBullets",
+    component: HeroBullets
+} satisfies Meta<typeof HeroBullets>;
 
-const Template: StoryFn = (args: Record<string, unknown>) => <HeroBullets {...args} targetId={"features"}/>;
+export default meta;
 
-export const Default = Template.bind({});
-Default.args = {};
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+    name: "Default",
+    args: {},
+    parameters: {
+        nextjs: {
+            appDirectory: true,
+        },
+    },
+};

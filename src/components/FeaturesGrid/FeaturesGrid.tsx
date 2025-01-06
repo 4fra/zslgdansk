@@ -30,7 +30,7 @@ export function Feature({icon: Icon, title, description, style}: FeatureProps) {
 export function FeaturesGrid() {
     return (
         <Container className={classes.wrapper} id={"features"}>
-            <Title className={classes.title}>Moje postulaty</Title>
+            <Title className={classes.title}>Moje postulaty w skrócie</Title>
 
             <Container size={560} p={0}>
                 <Text size="sm" className={classes.description}>

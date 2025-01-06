@@ -1,6 +1,5 @@
 "use client"
 import {Button} from '@mantine/core';
-import styles from './RedirectButton.module.css';
 import {useRouter} from 'next/navigation';
 
 interface RedirectButtonProps {
@@ -14,7 +13,6 @@ export default function RedirectButton({to}: RedirectButtonProps) {
             radius="xl"
             size="md"
             mt={30}
-            className={styles.control}
             onClick={() => push(to)}
         >
             Dowiedz się więcej

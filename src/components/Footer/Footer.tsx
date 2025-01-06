@@ -1,13 +1,12 @@
-import {Anchor, Container, Flex} from '@mantine/core';
+import {Anchor, Container, Flex, Text} from '@mantine/core';
 import classes from './Footer.module.css';
-import PlutaLogo from "@/components/PlutaLogo/PlutaLogo";
 
 export default function Footer() {
     return (
         <div className={classes.footer}>
             <Container className={classes.inner}>
                 <Flex className={classes.logoTextContainer} direction={'row'} align={'center'} gap={'md'}>
-                    <PlutaLogo h={48}/>
+                    <Text>Skontaktuj się ze mną na Discord: <span className={classes.highlight}>404fra</span></Text>
                 </Flex>
 
                 <div className={classes.linksContainer}>
