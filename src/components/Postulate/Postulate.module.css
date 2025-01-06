@@ -1,0 +1,5 @@
+.inner {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+}

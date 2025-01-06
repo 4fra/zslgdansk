@@ -10,7 +10,8 @@ import {usePathname} from 'next/navigation';
 
 const links = [
     {link: '/', label: 'Strona główna'},
-    {link: '/plutomierz', label: 'Darmowy Plutomierz'},
+    {link: '/plutomierz', label: 'Plutomierz'},
+    {link: '/postulaty', label: 'Postulaty'},
 ];
 
 export default function Header() {

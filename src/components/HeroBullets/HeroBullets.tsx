@@ -3,13 +3,9 @@ import {Container, Image, List, ListItem, Text, ThemeIcon} from '@mantine/core';
 import styles from './HeroBullets.module.css';
 import texts from './data/texts';
 import AnimatedTitle from '../AnimatedTitle/AnimatedTitle';
-import ScrollButton from "@/components/ScrollButton/ScrollButton";
+import RedirectButton from "@/components/RedirectButton/RedirectButton";
 
-interface HeroBulletsProps {
-    targetId: string;
-}
-
-export default function HeroBullets({targetId}: HeroBulletsProps) {
+export default function HeroBullets() {
     return (
         <Container size="md">
             <div className={styles.inner}>
@@ -36,9 +32,9 @@ export default function HeroBullets({targetId}: HeroBulletsProps) {
                         <ListItem>Lepsza komunikacja</ListItem>
                     </List>
 
-                    <ScrollButton styles={styles} targetId={targetId}/>
+                    <RedirectButton to="/postulaty"/>
                 </div>
-                <Image src={"/pdwface.png"} alt={"Robert Kibica"} className={styles.image}/>
+                <Image src={"/pdwmenel.jpg"} alt={"Robert Kibica"} className={styles.image}/>
             </div>
         </Container>
     );
