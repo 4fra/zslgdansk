@@ -19,7 +19,7 @@ const FeaturesData = [
         icon: IconUser,
         title: 'Transparentność SU',
         description:
-            'Osoba z drugim miejscem w wyborach zostanie wybrana przeze mnie na funkcję wiceprzewodniczącego.',
+            'Wiceprzewodniczący wybrany przez uczniów.',
     },
     {
         icon: IconDeviceMobile,
