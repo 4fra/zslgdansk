@@ -9,9 +9,7 @@ const PlutomierzContainer: React.FC = () => (
         <Title order={4}>Sprawdź siłę pozytywnych wibracji!</Title>
         <Plutomierz/>
         <Text size="md" mt="xl">
-            Plutomierz służy do pomiaru globalnych pozytywnych wibracji, w standardowej jednostce - Pluta. <br/> Pełna
-            wersja
-            Plutomierza dostępna na stronie <a href={"https://plutomierz.ovh/"}>plutomierz.ovh</a>
+            Plutomierz służy do pomiaru globalnych pozytywnych wibracji, w standardowej jednostce - Pluta.
         </Text>
     </Container>
 );
